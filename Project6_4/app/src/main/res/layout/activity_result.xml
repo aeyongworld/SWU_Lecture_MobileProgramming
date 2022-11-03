@@ -43,7 +43,7 @@
 
         <RatingBar
             android:id="@+id/rbar1"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right" >
         </RatingBar>
 
@@ -60,7 +60,7 @@
 
         <RatingBar
             android:id="@+id/rbar2"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right" >
         </RatingBar>
 
@@ -80,7 +80,7 @@
 
         <RatingBar
             android:id="@+id/rbar3"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right" >
         </RatingBar>
 
@@ -98,7 +98,7 @@
 
         <RatingBar
             android:id="@+id/rbar4"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right" >
         </RatingBar>
 
@@ -116,7 +116,7 @@
 
         <RatingBar
             android:id="@+id/rbar5"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right" >
         </RatingBar>
 
@@ -134,7 +134,7 @@
 
         <RatingBar
             android:id="@+id/rbar6"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right" >
         </RatingBar>
 
@@ -152,7 +152,7 @@
 
         <RatingBar
             android:id="@+id/rbar7"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right" >
         </RatingBar>
 
@@ -170,7 +170,7 @@
 
         <RatingBar
             android:id="@+id/rbar8"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right" >
         </RatingBar>
 
@@ -188,7 +188,7 @@
 
         <RatingBar
             android:id="@+id/rbar9"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right" >
         </RatingBar>
 
