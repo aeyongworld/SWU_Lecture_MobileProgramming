@@ -9,7 +9,15 @@
         android:layout_width="200px"
         android:layout_height="300px"
         android:scaleType="fitCenter"
-        android:layout_margin="3dp" />
+        android:layout_margin="3dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="18sp"
+        android:id="@+id/ivPoster3" />
 
 
 </LinearLayout>

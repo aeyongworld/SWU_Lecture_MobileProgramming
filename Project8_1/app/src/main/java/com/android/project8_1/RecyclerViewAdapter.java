@@ -5,10 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
+
+import org.w3c.dom.Text;
 
 import java.util.ConcurrentModificationException;
 
@@ -37,6 +40,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.ivPoster1.setImageResource(posterID[position]);
+        holder.ivPoster3.setText(posterTitle[position]);
 
         final int pos = position;
         holder.ivPoster1.setOnClickListener(new View.OnClickListener() {
@@ -63,10 +67,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView ivPoster1;
+        TextView ivPoster3;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             ivPoster1 = itemView.findViewById(R.id.ivPoster1);
+            ivPoster3 = itemView.findViewById(R.id.ivPoster3);
+
         }
     }
 
