@@ -12,8 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="이번에는 드라마 주인공을 골라볼까요?"
+        android:text="이번에는 드라마 주인공의 사진을 볼까요?"
         android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="배경음악 재생!" />
 
     <CheckBox
         android:id="@+id/ChkAgree"
@@ -39,30 +45,30 @@
             android:id="@+id/Rdo1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="김선호" />
+            android:text="김선호(갯마을차차차)" />
 
         <RadioButton
             android:id="@+id/Rdo2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="안효섭" />
+            android:text="안효섭(사내맞선)" />
 
         <RadioButton
             android:id="@+id/Rdo3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="남주혁" />
+            android:text="남주혁(스물다섯스물하나)" />
         <RadioButton
             android:id="@+id/Rdo4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="안보현" />
+            android:text="안보현(유미의세포들)" />
 
         <RadioButton
             android:id="@+id/Rdo5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="박보검" />
+            android:text="박보검(응답하라1988)" />
 
     </RadioGroup>
 

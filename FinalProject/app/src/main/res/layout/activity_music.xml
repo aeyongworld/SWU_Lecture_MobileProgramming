@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/baseLayout"
     tools:context=".MusicActivity">
 
     <Button
@@ -30,5 +31,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="김선호 앨범" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="배경색을 한번 바꿔볼까요?"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상단의 옵션 메뉴를 클릭해봐요!"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="처음으로 돌아가기" />
+
 
 </LinearLayout>

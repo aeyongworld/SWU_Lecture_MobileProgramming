@@ -10,13 +10,17 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+// 프로그램 제목 : 너의 원픽은?
+// 학번: 2020111315 이름: 김동주
+// 코드작성날짜 2022.12.15
+
 public class ResultActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-        setTitle("투표 결과");
+        setTitle("투표 결과");           // 진행했던 드라마 투표 결과를 확인할 수 있다.
 
         Intent intent = getIntent();
         int[] voteResult = intent.getIntArrayExtra("VoteCount");
@@ -34,7 +38,7 @@ public class ResultActivity extends AppCompatActivity {
             rbar[i] = (RatingBar) findViewById(rbarID[i]);
         }
 
-        for(int i=0; i<voteResult.length; i++) {
+        for(int i=0; i<voteResult.length; i++) {                        // 각 드라마의 투표 결과를 확인할 수 있다.
             tv[i].setText(imageName[i]);
             rbar[i].setRating((float) voteResult[i]);
         }
@@ -44,7 +48,7 @@ public class ResultActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getApplicationContext(), SelectActivity.class);
+                Intent intent = new Intent(getApplicationContext(), SelectActivity.class);   // 주인공 사진보기 화면으로 넘어간다.
                 startActivity(intent);
 
             }
@@ -58,8 +62,8 @@ public class ResultActivity extends AppCompatActivity {
         for(int i=1; i<voteResult.length; i++) {
             if(voteResult[maxEntry] < voteResult[i])
                 maxEntry = i;
-        }
-        tvResult.setText(imageName[maxEntry]);
+        }                                                                    // 가장 많이 투표를 받은 드라마는
+        tvResult.setText(imageName[maxEntry]);                               // 제목과 포스터가 상단에 보여진다.
         ivResult.setImageResource(imageFileID[maxEntry]);
 
     }

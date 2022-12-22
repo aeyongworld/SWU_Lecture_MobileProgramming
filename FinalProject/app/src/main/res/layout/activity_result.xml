@@ -17,7 +17,7 @@
             android:text="★★가장 좋아하는 드라마★★"
             android:textStyle="bold"
             android:textColor="#FF00FF"
-            android:textSize="15dp" />
+            android:textSize="25dp" />
 
     </TableRow>
 

@@ -9,13 +9,17 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+// 프로그램 제목 : 너의 원픽은?
+// 학번: 2020111315 이름: 김동주
+// 코드작성날짜 2022.12.15
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        setTitle("가장 좋아하는 드라마 투표");
+        setContentView(R.layout.activity_main);        // 처음 앱을 실행하면 9개의 드라마 포스터가 뜨고, 투표를 진행할 수 있다.
+        setTitle("너의 원픽은?");
 
         final int voteCount[] = new int[9];
         for(int i=0; i<9; i++)
@@ -30,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             index = i;
             image[index] = (ImageView) findViewById(imageId[index]);
             image[index].setOnClickListener(new View.OnClickListener() {
-                @Override
+                @Override                                                     // 포스터 이미지를 누르면 해당 드라마 투표값이 카운트되며 토스트메시지로 누적된 투표값을 알 수 있다.
                 public void onClick(View view) {
                     voteCount[index]++;
                     Toast.makeText(getApplicationContext(), imgName[index] + ": 총" + voteCount[index] + " 표", Toast.LENGTH_SHORT).show();
@@ -42,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btnFinish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ResultActivity.class);      // 버튼을 클릭했을 때 결과 화면으로 넘어가게 한다.
                 intent.putExtra("VoteCount", voteCount);
                 intent.putExtra("ImageName", imgName);
                 startActivity(intent);
