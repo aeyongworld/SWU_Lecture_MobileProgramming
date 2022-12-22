@@ -26,7 +26,7 @@
             app:switchTabs="@array/switch_tabs"
             app:textSize="14sp" />
 
-        <Button
+        <android.widget.Button
             android:id="@+id/todayWriteButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:stretchColumns="0"
+    tools:context=".ResultActivity">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_gravity="center"
+            android:layout_span="2"
+            android:text="★★가장 좋아하는 드라마★★"
+            android:textStyle="bold"
+            android:textColor="#FF00FF"
+            android:textSize="15dp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/ivResult"
+            android:scaleType="fitCenter"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_span="2"
+            android:src="@drawable/poster1" />
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="드라마1"
+            android:textSize="15dp" />
+
+        <RatingBar
+            android:id="@+id/rbar1"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="right" >
+        </RatingBar>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="드라마2"
+            android:textSize="15dp" />
+
+        <RatingBar
+            android:id="@+id/rbar2"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="right" >
+        </RatingBar>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="드라마3"
+            android:textSize="15dp" />
+
+        <RatingBar
+            android:id="@+id/rbar3"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="right" >
+        </RatingBar>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="드라마4"
+            android:textSize="15dp" />
+
+        <RatingBar
+            android:id="@+id/rbar4"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="right" >
+        </RatingBar>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="드라마5"
+            android:textSize="15dp" />
+
+        <RatingBar
+            android:id="@+id/rbar5"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="right" >
+        </RatingBar>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="드라마6"
+            android:textSize="15dp" />
+
+        <RatingBar
+            android:id="@+id/rbar6"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="right" >
+        </RatingBar>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="드라마7"
+            android:textSize="15dp" />
+
+        <RatingBar
+            android:id="@+id/rbar7"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="right" >
+        </RatingBar>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="드라마8"
+            android:textSize="15dp" />
+
+        <RatingBar
+            android:id="@+id/rbar8"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="right" >
+        </RatingBar>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="드라마9"
+            android:textSize="15dp" />
+
+        <RatingBar
+            android:id="@+id/rbar9"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="right" >
+        </RatingBar>
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_span="2"
+            android:text="돌아가기" />
+    </TableRow>
+
+</TableLayout>

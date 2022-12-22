@@ -38,4 +38,6 @@ dependencies {
 
     implementation 'lib.kingja.switchbutton:switchbutton:1.1.8'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.github.channguyen:rsv:1.0.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
