@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectActivity">
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="이번에는 드라마 주인공을 골라볼까요?"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/ChkAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="네!" />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좋아하는 주인공은?"
+        android:visibility="invisible" />
+
+    <RadioGroup
+        android:id="@+id/Rgroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <RadioButton
+            android:id="@+id/Rdo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="김선호" />
+
+        <RadioButton
+            android:id="@+id/Rdo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안효섭" />
+
+        <RadioButton
+            android:id="@+id/Rdo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남주혁" />
+        <RadioButton
+            android:id="@+id/Rdo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안보현" />
+
+        <RadioButton
+            android:id="@+id/Rdo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="박보검" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/BtnOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="선택 완료"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/ImgStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+</LinearLayout>

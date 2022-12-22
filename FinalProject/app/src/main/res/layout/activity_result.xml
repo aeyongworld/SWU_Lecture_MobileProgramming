@@ -181,9 +181,9 @@
     <TableRow>
 
         <Button
-            android:id="@+id/btnReturn"
+            android:id="@+id/btnNext"
             android:layout_span="2"
-            android:text="돌아가기" />
+            android:text="다음으로" />
     </TableRow>
 
 </TableLayout>

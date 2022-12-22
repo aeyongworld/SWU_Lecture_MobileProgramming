@@ -39,11 +39,14 @@ public class ResultActivity extends AppCompatActivity {
             rbar[i].setRating((float) voteResult[i]);
         }
 
-        Button btnReturn = (Button) findViewById(R.id.btnReturn);
-        btnReturn.setOnClickListener(new View.OnClickListener() {
+        Button btnNext = (Button) findViewById(R.id.btnNext);
+        btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+
+                Intent intent = new Intent(getApplicationContext(), SelectActivity.class);
+                startActivity(intent);
+
             }
         });
 
