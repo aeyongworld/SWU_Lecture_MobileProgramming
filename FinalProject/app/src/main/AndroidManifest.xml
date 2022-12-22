@@ -13,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject"
         tools:targetApi="31">
+
+        <activity
+            android:name=".MusicActivity"
+            android:exported="false" />
         <activity
             android:name=".SelectActivity"
             android:exported="false" />
@@ -28,6 +32,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

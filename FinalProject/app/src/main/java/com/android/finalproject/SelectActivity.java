@@ -2,6 +2,7 @@ package com.android.finalproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +20,7 @@ public class SelectActivity extends AppCompatActivity {
     CheckBox chkAgree;
     RadioGroup rGroup1;
     RadioButton rdo1, rdo2, rdo3, rdo4, rdo5;
-    Button btnOK;
+    Button btnOK, btnNext;
     ImageView imgStar;
 
 
@@ -41,6 +42,7 @@ public class SelectActivity extends AppCompatActivity {
         rdo5 = (RadioButton) findViewById(R.id.Rdo5);
 
         btnOK = (Button) findViewById(R.id.BtnOK);
+        btnNext = (Button) findViewById(R.id.btnNext2);
         imgStar = (ImageView) findViewById(R.id.ImgStar);
 
 
@@ -52,11 +54,13 @@ public class SelectActivity extends AppCompatActivity {
                     text2.setVisibility(View.VISIBLE);
                     rGroup1.setVisibility(View.VISIBLE);
                     btnOK.setVisibility(View.VISIBLE);
+                    btnNext.setVisibility(View.VISIBLE);
                     imgStar.setVisibility(View.VISIBLE);
                 } else {
                     text2.setVisibility(View.INVISIBLE);
                     rGroup1.setVisibility(View.INVISIBLE);
                     btnOK.setVisibility(View.INVISIBLE);
+                    btnNext.setVisibility(View.INVISIBLE);
                     imgStar.setVisibility(View.INVISIBLE);
                 }
             }
@@ -84,6 +88,14 @@ public class SelectActivity extends AppCompatActivity {
                     default:
                         Toast.makeText(getApplicationContext(), "주인공 먼저 선택해요!", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MusicActivity.class);
+                startActivity(intent);
             }
         });
 
